@@ -1,0 +1,8 @@
+services:
+
+  anti_bruteforce:
+    build: 
+      context: .
+      dockerfile: ./build/Dockerfile
+    ports:
+      - "8080:8080"
