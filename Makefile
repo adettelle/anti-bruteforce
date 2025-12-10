@@ -18,14 +18,14 @@ check: lint vet test
 run: 
 	go run ./cmd/server/
 
-# build:
-# 	go build -v -o "$(BIN)/anti_bruteforce" ./cmd/
+build_ab:
+	go build -v -o "$(BIN)/anti_bruteforce" ./cmd/server/
 
-# up:
-# 	docker compose up anti_bruteforce -d --build
+up:
+	docker compose up anti_bruteforce -d --build
 
-# down:
-# 	docker compose down
+down:
+	docker compose down
 
 # integration-tests:
 # 	docker compose up integration-tests --build
